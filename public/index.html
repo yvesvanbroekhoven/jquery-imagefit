@@ -6,13 +6,59 @@
 
   <title>jquery-imagefit demo</title>
 
+  <style type="text/css">
+    body {
+      padding: 20px;
+    }
+
+    #wrapper-landscape {
+      border: 1px solid #333333;
+      height: 600px;
+      margin: 0 auto 20px auto;
+      overflow: hidden;
+      position: relative;
+      width: 800px;
+    }
+
+    #wrapper-portrait {
+      border: 1px solid #333333;
+      height: 800px;
+      margin: 0 auto 20px auto;
+      overflow: hidden;
+      position: relative;
+      width: 600px;
+    }
+
+  </style>
+
   <script src="http://www.google.com/jsapi?key="></script>
   <script>
     google.load("jquery", "1");
   </script>
   <script src="jquery-imagefit-min.js"></script>
+  <script>
+    $(function() {
+      $('img').imageFit();
+    });
+  </script>
 </head>
 <body>
+
+  <div id="wrapper-landscape">
+    <img src="http://placehold.it/900x400" alt="" />
+  </div>
+
+  <div id="wrapper-portrait">
+    <img src="http://placehold.it/400x900" alt="" />
+  </div>
+
+  <div id="wrapper-landscape">
+    <img src="http://placehold.it/400x900" alt="" />
+  </div>
+
+  <div id="wrapper-portrait">
+    <img src="http://placehold.it/900x400" alt="" />
+  </div>
 
 </body>
 </html>
