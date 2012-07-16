@@ -4,7 +4,9 @@ Fit an image tied & centered in his container.
 
 ## How to use
 
-  $('your-selector').imagefit()
+```
+$('your-selector').imagefit()
+```;
 
 ## Protips
 
