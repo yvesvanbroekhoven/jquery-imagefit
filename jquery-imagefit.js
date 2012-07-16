@@ -22,14 +22,10 @@
       image_ratio   = $this.width() / $this.height();
       wrapper_ratio = wrapper_width / wrapper_height;
 
-      console.log("ratio image", image_ratio);
-      console.log("ratio wrapper", wrapper_ratio);
-
       $this.css({
         position  : 'absolute'
       });
 
-      // Landscape
       if ( wrapper_ratio < image_ratio ) {
         $this.css({
           height    : 'auto',
@@ -42,7 +38,6 @@
           marginTop : 0 - ($this.height() / 2)
         });
 
-      // Portrait
       } else {
         $this.css({
           height    : wrapper_height,
