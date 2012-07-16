@@ -35,12 +35,8 @@
   <script>
     google.load("jquery", "1");
   </script>
+  <script src="https://raw.github.com/desandro/imagesloaded/master/jquery.imagesloaded.min.js"></script>
   <script src="jquery-imagefit-min.js"></script>
-  <script>
-    $(function() {
-      $('img').imagefit();
-    });
-  </script>
 </head>
 <body>
 
@@ -59,6 +55,15 @@
   <div id="wrapper-portrait">
     <img src="http://placehold.it/900x400" alt="" />
   </div>
+
+<script>
+  $(function() {
+    $('body').imagesLoaded(function() {
+      $('img').imagefit();
+    });
+
+  });
+</script>
 
 </body>
 </html>
