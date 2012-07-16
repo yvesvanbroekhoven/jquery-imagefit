@@ -6,7 +6,7 @@ Fit an image tied & centered in his container.
 
 ```
 $('your-selector').imagefit()
-```;
+```
 
 ## Protips
 
