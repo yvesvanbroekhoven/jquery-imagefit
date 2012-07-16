@@ -8,7 +8,7 @@
 
 (function($) {
 
-  $.fn.imageFit = function() {
+  $.fn.imagefit = function() {
 
     this.each( function() {
       var $this           = $(this),
