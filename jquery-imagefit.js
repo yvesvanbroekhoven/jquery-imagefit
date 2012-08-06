@@ -3,7 +3,7 @@
  *
  * Created at: 2012-07-16 19:24:45 +0200
  * Author: Yves Van Broekhoven
- * Version: 0.0.2
+ * Version: 0.0.3
  */
 
 (function($) {
