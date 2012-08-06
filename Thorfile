@@ -4,7 +4,7 @@ class Jplugin < Thor
   desc "compile", "Compiles js file to public/"
   def compile
     relative = 'jquery-imagefit.js'
-    run( "closure --js #{relative} --js_output_file ./public/#{relative.gsub(".js","-min.js")}" )
+    run( "closure-compiler --js #{relative} --js_output_file ./public/#{relative.gsub(".js","-min.js")}" )
   end
 
   class Release < self

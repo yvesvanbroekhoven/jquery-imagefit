@@ -3,7 +3,7 @@
  *
  * Created at: 2012-07-16 19:24:45 +0200
  * Author: Yves Van Broekhoven
- * Version: 0.0.1
+ * Version: 0.0.2
  */
 
 (function($) {
@@ -35,6 +35,7 @@
         });
 
         $this.css({
+          marginLeft: 0,
           marginTop : 0 - ($this.height() / 2)
         });
 
@@ -47,6 +48,7 @@
         });
 
         $this.css({
+          marginTop   : 0,
           marginLeft  : 0 - ($this.width() / 2)
         });
 
